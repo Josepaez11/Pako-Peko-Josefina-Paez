@@ -6,11 +6,46 @@
 html{
     font-size: 100%;
 }
+.menu{
+	background-color: #1B998B;
+}
+header{
+	grid-area: header;
+	background-image:linear-gradient(to left, rgb(7, 203, 168) rgb(255, 0, 157)) ;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 1px 3px 13px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px 3px 13px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 3px 13px 0px rgba(0,0,0,0.75);
+margin: 0px;
+}
+header img{
+	width: 100px;
+	padding-left: 20px;
+}
+header ul{
+	padding: 0%;
+	margin:0%;
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+}
+header ul li a{
+	color: aliceblue;
+	padding: 0px 10px;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+}
+header ul li a:hover{
+	color:#1B998B
+}
+
 body{
     background-color: #F71735;
 }
 h1{
-    color: white;
+    color: #1B998B;
     font-family: sans-serif;
     position: absolute;
     top: 50px;
@@ -28,7 +63,7 @@ img{
     padding-left: 520px;
     padding-right: 500px;
     text-align: center;
-    color: aliceblue;
+    color: #1B998B;
 }
 .menu{
     padding: 0px 20px 0px 0px;
@@ -53,7 +88,6 @@ a:link,
 a:visited,
 a:active{
     text-decoration: none;
-    color: white;
 }
 .instagram{
     width: 30px;

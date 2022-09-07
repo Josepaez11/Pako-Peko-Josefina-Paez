@@ -6,6 +6,9 @@
 html{
     font-size: 100%;
 }
+.menu{
+	background-color: #1B998B;
+}
 .container{
 	display: grid;
 	grid-template-areas:
@@ -48,6 +51,7 @@ header ul li a{
 header ul li a:hover{
 	color:#1B998B
 }
+
 h1{
 	grid-area: titulo;
 	color: #F71735;

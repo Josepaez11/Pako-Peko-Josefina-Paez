@@ -6,6 +6,40 @@
 html{
     font-size: 100%;
 }
+.menu{
+	background-color: #1B998B;
+}
+header{
+	grid-area: header;
+	background-image:linear-gradient(to left, rgb(7, 203, 168) rgb(255, 0, 157)) ;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 1px 3px 13px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px 3px 13px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 3px 13px 0px rgba(0,0,0,0.75);
+margin: 0px;
+}
+header img{
+	width: 100px;
+	padding-left: 20px;
+}
+header ul{
+	padding: 0%;
+	margin:0%;
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+}
+header ul li a{
+	color: aliceblue;
+	padding: 0px 10px;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+}
+header ul li a:hover{
+	color:#1B998B
+}
 h1{
     color: white;
     font-family: sans-serif;
@@ -40,7 +74,6 @@ a:link,
 a:visited,
 a:active{
     text-decoration: none;
-    color: white;
 }
 .form{
     padding: 20px;

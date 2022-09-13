@@ -1,0 +1,19 @@
+@import "./color.scss";
+html {
+    font-size: 100%; }
+header{
+a{
+    text-decoration: none;
+    color: black;
+    &:hover{
+        color: aqua;
+    }
+}
+}
+p{
+    color: $primary-color;
+    &:hover{
+        color:$hover-color
+    }
+}
+

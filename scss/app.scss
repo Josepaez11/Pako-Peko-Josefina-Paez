@@ -1,6 +1,4 @@
 @import "./color.scss";
-html {
-    font-size: 100%; }
 header{
 a{
     text-decoration: none;
@@ -10,10 +8,38 @@ a{
     }
 }
 }
-p{
-    color: $primary-color;
-    &:hover{
-        color:$hover-color
+$colors:(
+    primary:rgb(33, 102, 102), 
+secondary: rgb(183, 57, 149),
+tertiary:white
+);
+.parrafo{
+    width: fit-content;
+    justify-content: center;
+    align-content: center;
+}
+.p-primero{
+    @extend .parrafo;
+    @each $color-name, $color-value in $colors {
+        .#{$color-name}{
+            color: #{$color-value};
+        }
+        background-color: map-get($colors, primary);
+        color: map-get($colors, tertiary)
+        
+    }
+}
+@mixin estilo-parrafo ($background, $typography){
+    background-color: $background;
+    color:$typography;
+}
+.p-segundo{
+    @extend .parrafo;
+    @include estilo-parrafo(rgb(183, 57, 149),white );
+    @each $color-name, $color-value in $colors {
+        .#{$color-name}{
+            color: #{$color-value};
+        }
     }
 }
 

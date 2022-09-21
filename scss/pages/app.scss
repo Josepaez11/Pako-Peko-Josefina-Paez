@@ -1,4 +1,5 @@
-@import "./color.scss";
+@import "../variables/color.scss";
+
 header{
 a{
     text-decoration: none;
@@ -41,5 +42,16 @@ tertiary:white
             color: #{$color-value};
         }
     }
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    font-family: 'Roboto', sans-serif;
+    color: aliceblue;
+    background-color: #E6AF2E;
+    padding-top: 25px;
+    padding-left: 580px;
+    padding-right: 600px;
+    padding-bottom: 25px;
 }
 

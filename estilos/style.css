@@ -4,10 +4,19 @@ header a {
   header a:hover {
     color: aqua; }
 
+.logo {
+  position: relative;
+  top: 10px;
+  width: 100px;
+  padding: 20px; }
+
 .parrafo, .p-primero, .p-segundo {
   width: fit-content;
   justify-content: center;
   align-content: center; }
+
+h1 {
+  color: #1B998B; }
 
 .p-primero {
   background-color: #216666;
@@ -33,7 +42,22 @@ header a {
   .p-segundo .tertiary {
     color: white; }
 
-.footer, .footer-index {
+.foto-perfil {
+  position: absolute;
+  top: 200px;
+  width: 150px;
+  left: 570px;
+  align-content: center; }
+
+.datos {
+  position: absolute;
+  top: 350px;
+  padding-left: 520px;
+  padding-right: 500px;
+  text-align: center;
+  color: #1B998B; }
+
+.footer, .footer-index, .footer-contacto, .footer-miperfil, .footer-productos, .footer-sobrenosotros {
   position: absolute;
   bottom: 0;
   font-family: 'Roboto', sans-serif;
@@ -44,4 +68,16 @@ header a {
   padding-bottom: 25px; }
 
 .footer-index {
+  background-color: #F71735; }
+
+.footer-contacto {
+  background-color: #1B998B; }
+
+.footer-miperfil {
+  background-color: #F71735; }
+
+.footer-productos {
+  background-color: #1B998B; }
+
+.footer-sobrenosotros {
   background-color: #F71735; }
